@@ -49,3 +49,12 @@ var app = express()
 
 var server = https.createServer(certOptions, app).listen(443)
 ```
+
+
+Add more local domain to v3.ext list under alt_names
+[alt_names]
+```
+DNS.1 = localhost
+DNS.1 = another
+DNS.1 = anotherone
+```
